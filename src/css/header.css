@@ -167,7 +167,8 @@ body:has(.nav-modal-overlay.is-open) {
     width: 100%;
 }
 .modal-header .logo {
-        margin-right: auto;
+    margin-right: auto;
+    fill: #fff;    
 }
 @media only screen and (min-width: 768px){
     .modal-header .logo {

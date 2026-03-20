@@ -191,7 +191,6 @@ body:has(.nav-modal-overlay.is-open) {
   .nav-modal-list {
     align-items: flex-end;
     padding: 24px 0 24px;
-    width: 286px;
     gap: 24px;
   }
 }

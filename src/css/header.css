@@ -96,7 +96,7 @@
     height: 100%;
     z-index: 999;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
     background-color: var(--opacity-neutral-darkest-30);
 
@@ -110,19 +110,40 @@
     pointer-events: auto;
     visibility: visible;
 }
+@media only screen and (min-width: 1440px) {
+  .nav-modal-overlay {
+    display: none;
+  }
+}
 body:has(.nav-modal-overlay.is-open) {
     overflow-y: hidden;
+}
+.modal-container {
+    padding: 0;
+    height: 100%;
+@media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    width: 768px;
+}
 }
 .nav-modal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0px 16px;
-    width: 375px;
+    padding: 0px 32px;
+    max-width: 375px;
     height: 100%;
     background-color: var(--color-scheme-1-background);
     overflow-y: auto;
+}
+@media only screen and (min-width: 768px) {
+  .nav-modal {
+    align-items: flex-end;
+    width: 286px;
+    height: 812px;
+  }
 }
 .modal-header {
     display: inline-flex;
@@ -131,6 +152,13 @@ body:has(.nav-modal-overlay.is-open) {
     width: 100%;
     & .logo {
         margin-right: auto;
+        @media only screen and (min-width: 768px){
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px){
+        justify-content: flex-end;
+        padding-top: 32px;
     }
 }
 .close-modal {
@@ -156,6 +184,14 @@ body:has(.nav-modal-overlay.is-open) {
     font-weight: 600;
     font-size: 18px;
 }
+@media only screen and (min-width: 768px) {
+  .nav-modal-list {
+    align-items: flex-end;
+    padding: 24px 0 24px;
+    width: 286px;
+    gap: 24px;
+  }
+}
 .nav-modal-list-item:hover,
 .nav-modal-list-item:focus {
     opacity: 0.5;
@@ -171,4 +207,10 @@ body:has(.nav-modal-overlay.is-open) {
     font-weight: 500;
     font-size: 16px;
     color: var(--color-white);
+}
+@media only screen and (min-width: 768px) {
+  .modal-order-btn {
+    width: 222px;
+    height: 32px;
+  }
 }

@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 32px;
     height: 72px;
+}
+.nav {
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 1;
 }
 .logo {
     fill: var(--color-white);
-    margin-left: auto;
+    margin-right: auto;
 }
 .nav-list,
 .nav-list-item,
@@ -15,19 +20,22 @@
     display: none;
 }
 @media only screen and (min-width: 1440px) {
-  .nav {
-    display: inline-flex;
-    align-items: center;
-  }  
   .nav-list {
     display: inline-flex;
     align-items: center;
     gap: 32px;
-    margin-left: 422px;
   }
   .nav-list-item {
     display: flex;
+    font-weight: 500;
+    color: var(--color-white);
+
+    transition: color 500 ease-in-out;
   }
+}
+.nav-list-item:hover,
+.nav-list-item:focus {
+    opacity: 0.5;
 }
 @media only screen and (min-width: 768px) {
   .wrapper-btn {
@@ -47,11 +55,20 @@
     padding: 4px 24px;
     width: 92px;
     height: 32px;
-    background: var(--color-japanese-laurel);
+    background-color: var(--color-japanese-laurel);
 
     font-weight: 500;
     color: var(--color-white);
+
+    transition-property: background-color, color, border;
+    transition: 500 ease-in-out;
   }
+}
+.order-btn:hover,
+.order-btn:focus {
+    color: var(--color-neutral-darkest);
+    border: 1px solid var(--color-white);
+    background-color: var(--color-white);
 }
 .burger-menu {
     display: flex;
@@ -68,5 +85,132 @@
   }
   @media only screen and (min-width: 1440px) {
     display: none;
+  }
+}
+
+.nav-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--opacity-neutral-darkest-30);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500 ease-in-out;
+    visibility: hidden;
+}
+.nav-modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+@media only screen and (min-width: 1440px) {
+  .nav-modal-overlay {
+    display: none;
+  }
+}
+body:has(.nav-modal-overlay.is-open) {
+    overflow-y: hidden;
+}
+.modal-container {
+    padding: 0;
+    height: 100%;
+@media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    width: 768px;
+}
+}
+.nav-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 32px;
+    max-width: 375px;
+    height: 100%;
+    background-color: var(--color-scheme-1-background);
+    overflow-y: auto;
+}
+@media only screen and (min-width: 768px) {
+  .nav-modal {
+    align-items: flex-end;
+    width: 286px;
+    height: 812px;
+  }
+}
+.modal-header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & .logo {
+        margin-right: auto;
+        @media only screen and (min-width: 768px){
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px){
+        justify-content: flex-end;
+        padding-top: 32px;
+    }
+}
+.close-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    & .icon-close {
+        fill: var(--color-white);
+    }
+}
+.nav-modal-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 0px 32px;
+    width: 100%;
+
+    font-weight: 600;
+    font-size: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .nav-modal-list {
+    align-items: flex-end;
+    padding: 24px 0 24px;
+    width: 286px;
+    gap: 24px;
+  }
+}
+.nav-modal-list-item:hover,
+.nav-modal-list-item:focus {
+    opacity: 0.5;
+}
+.modal-order-btn {
+    border-radius: 6px;
+    padding: 6px 12px;
+    width: 343px;
+    height: 40px;
+    border: 1px solid var(--color-japanese-laurel);
+    background-color: var(--color-japanese-laurel);
+
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-white);
+}
+@media only screen and (min-width: 768px) {
+  .modal-order-btn {
+    width: 222px;
+    height: 32px;
   }
 }

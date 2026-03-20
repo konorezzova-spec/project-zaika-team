@@ -47,11 +47,20 @@
     padding: 4px 24px;
     width: 92px;
     height: 32px;
-    background: var(--color-japanese-laurel);
+    background-color: var(--color-japanese-laurel);
 
     font-weight: 500;
     color: var(--color-white);
+
+    transition-property: background-color, color, border;
+    transition: 500 ease-in-out;
   }
+}
+.order-btn:hover,
+.order-btn:focus {
+    color: var(--color-neutral-darkest);
+    border: 1px solid var(--color-white);
+    background-color: var(--color-scheme-3-text);
 }
 .burger-menu {
     display: flex;

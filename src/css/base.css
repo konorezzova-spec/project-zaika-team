@@ -2,11 +2,8 @@
   /* font-family: Public Sans, sans-serif; */
   --font-family: "Public Sans", sans-serif;
   --second-family: "Chivo", sans-serif;
-
-      --color-scheme-1-background: var(--color-japanese-laurel-light);
+  
       --color-neutral-darkest: #010400;
-      --color-scheme-1-border: var(--opacity-white-20);
-      --color-scheme-1-text: var(--color-white);
       --color-neutral-lighter: #d8d9d8;
       --color-white: #fff;
       --color-neutral-lightest: #f2f2f2;
@@ -15,8 +12,6 @@
       --color-neutral-dark: #4d4f4c;
       --color-neutral-darker: #1a1d19;
       --opacity-transparent: rgba(255, 255, 255, 0);
-      --color-scheme-1-foreground: var(--color-japanese-laurel-light);
-      --color-scheme-1-accent: var(--color-white);
       --opacity-white-5: rgba(255, 255, 255, 0.05);
       --opacity-white-10: rgba(255, 255, 255, 0.1);
       --opacity-white-15: rgba(255, 255, 255, 0.15);
@@ -40,26 +35,6 @@
       --color-japanese-laurel-dark: #144700;
       --color-japanese-laurel-darker: #0a2300;
       --color-japanese-laurel-darkest: #071a00;
-      --color-scheme-2-text: var(--color-neutral-darkest);
-      --color-scheme-2-background: var(--color-japanese-laurel-lightest);
-      --color-scheme-2-border: var(--opacity-neutral-darkest-15);
-      --color-scheme-2-accent: var(--color-japanese-laurel);
-      --color-scheme-2-foreground: var(--color-japanese-laurel-lightest);
-      --color-scheme-3-text: var(--color-white);
-      --color-scheme-3-background: var(--color-japanese-laurel);
-      --color-scheme-3-border: var(--opacity-white-20);
-      --color-scheme-3-accent: var(--color-white);
-      --color-scheme-3-foreground: var(--color-japanese-laurel);
-      --color-scheme-4-text: var(--color-neutral-darkest);
-      --color-scheme-4-background: var(--color-japanese-laurel-lighter);
-      --color-scheme-4-border: var(--opacity-neutral-darkest-15);
-      --color-scheme-4-accent: var(--color-japanese-laurel);
-      --color-scheme-4-foreground: var(--color-japanese-laurel-lighter);
-      --color-scheme-5-text: var(--color-white);
-      --color-scheme-5-background: var(--color-japanese-laurel-darker);
-      --color-scheme-5-border: var(--opacity-white-20);
-      --color-scheme-5-accent: var(--color-white);
-      --color-scheme-5-foreground: var(--color-japanese-laurel-darker);
       --color-error-red: #a00000;
     
     }

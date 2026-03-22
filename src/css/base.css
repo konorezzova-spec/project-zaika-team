@@ -36,8 +36,9 @@
       --color-japanese-laurel-darker: #0a2300;
       --color-japanese-laurel-darkest: #071a00;
       --color-error-red: #a00000;
-    
-    }
+
+  --slow: 350ms ease-in-out;
+}
 
 body {
   font-family: var(--font-family);

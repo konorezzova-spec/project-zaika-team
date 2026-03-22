@@ -74,3 +74,9 @@
         height: 36px;
     }
 }
+.hero-btn:hover,
+.hero-btn:focus {
+    background: var(--color-japanese-laurel-light);
+    color: var(--color-neutral-darkest);
+    border-color: var(--color-japanese-laurel-light);
+}

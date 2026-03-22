@@ -1,6 +1,10 @@
 .hero {
     background-color: linear-gradient (to-bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--color-neutral-darkest);
+<<<<<<< HEAD
     background-image: url('/img/Hero/image@1x.jpg');
+=======
+    background-image: url('/img/Hero/image@1x.jpg');
+>>>>>>> 5352788e7d0f19744a80eaf2afa0bed197da3ed0
     background-size: cover;
     background-position: center center;
 }

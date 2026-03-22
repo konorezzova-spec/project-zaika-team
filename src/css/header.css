@@ -59,8 +59,7 @@
       font-weight: 500;
       color: var(--color-white);
 
-      transition-property: background-color, color, border;
-      transition: var(--slow);
+      transition: background-color, color, border var(--slow);
   }
 }
   @media only screen and (min-width: 1440px) {
@@ -173,14 +172,12 @@ body:has(.nav-modal-overlay.is-open) {
     fill: #fff;    
 }
 @media only screen and (min-width: 768px){
-    .modal-header .logo {
-        display: none;
-    }
-}
-@media only screen and (min-width: 768px){
     .modal-header {
         justify-content: flex-end;
         padding: 32px 0 0;
+    }
+    .modal-header .logo {
+        display: none;
     }
 }
 .close-modal {
@@ -206,8 +203,7 @@ body:has(.nav-modal-overlay.is-open) {
     font-weight: 600;
     font-size: 18px;
 
-    transition-property: color;
-    transition: var(--slow);
+    transition: color var(--slow);
 }
 @media only screen and (min-width: 768px) {
   .nav-modal-list {
@@ -234,8 +230,7 @@ body:has(.nav-modal-overlay.is-open) {
     font-size: 16px;
     color: var(--color-white);
 
-    transition-property: background-color, color, border;
-    transition: var(--slow);
+    transition: background-color, color, border var(--slow);
 }
 @media only screen and (min-width: 768px) {
   .modal-order-btn {

@@ -5,6 +5,11 @@
     background-position: center center;
     border: 1px solid #000;
 }
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/hero/hero-image@2x.jpg');
+  }
+}
 .hero-container {
     padding-top: 183px;
     padding-bottom: 183px;

@@ -1,10 +1,12 @@
+.header {
+    background-color: #5e8a4d;
+}
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 32px;
     height: 72px;
-    background-color: #5e8a4d;
 }
 .nav {
     display: inline-flex;
@@ -31,7 +33,7 @@
     font-weight: 500;
     color: var(--color-white);
 
-    transition: color 500ms ease-in-out;
+    transition: color var(--slow);
   }
 }
 .nav-list-item:hover,
@@ -57,8 +59,7 @@
       font-weight: 500;
       color: var(--color-white);
 
-      transition-property: background-color, color, border;
-      transition: 500ms ease-in-out;
+      transition: background-color, color, border var(--slow);
   }
 }
   @media only screen and (min-width: 1440px) {
@@ -112,7 +113,7 @@
 
     opacity: 0;
     pointer-events: none;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity var(--slow);
     visibility: hidden;
 }
 .nav-modal-overlay.is-open {
@@ -171,14 +172,12 @@ body:has(.nav-modal-overlay.is-open) {
     fill: #fff;    
 }
 @media only screen and (min-width: 768px){
-    .modal-header .logo {
-        display: none;
-    }
-}
-@media only screen and (min-width: 768px){
     .modal-header {
         justify-content: flex-end;
         padding: 32px 0 0;
+    }
+    .modal-header .logo {
+        display: none;
     }
 }
 .close-modal {
@@ -203,6 +202,8 @@ body:has(.nav-modal-overlay.is-open) {
 
     font-weight: 600;
     font-size: 18px;
+
+    transition: color var(--slow);
 }
 @media only screen and (min-width: 768px) {
   .nav-modal-list {
@@ -228,6 +229,8 @@ body:has(.nav-modal-overlay.is-open) {
     font-weight: 500;
     font-size: 16px;
     color: var(--color-white);
+
+    transition: background-color, color, border var(--slow);
 }
 @media only screen and (min-width: 768px) {
   .modal-order-btn {

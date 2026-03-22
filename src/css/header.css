@@ -1,10 +1,12 @@
+.header {
+    background-color: #5e8a4d;
+}
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 32px;
     height: 72px;
-    background-color: #5e8a4d;
 }
 .nav {
     display: inline-flex;

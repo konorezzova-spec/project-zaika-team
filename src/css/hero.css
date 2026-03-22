@@ -1,0 +1,6 @@
+.hero {
+    background-color: linear-gradient (to-bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--color-neutral-darkest);
+    background-image: url('../img/Hero/image@1x.jpg');
+    background-size: cover;
+    background-position: center center;
+}

@@ -3,9 +3,11 @@
     padding-top: 64px;
     padding-bottom: 64px;
 }
-.mission-context {
-    width: 100%;
-    height: 100%;
+@media only screen and (min-width: 1440px) {
+  .mission {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
 }
 .mission-context h2 {
     font-family: var(--second-family);
@@ -14,9 +16,29 @@
     letter-spacing: -0.01em;
     color: var(--color-white);
     margin-bottom: 24px;
-    }
+}
 .mission-context p {
     font-size: 18px;
     margin-bottom: 32px;
 }
+@media only screen and (min-width: 768px) {
+  .mission-context {
+    display: flex;
+    gap: 24px;
+  }
+  .mission-context h2, 
+  .mission-context p {
+    width: 340px;
+  }
+}
 
+@media only screen and (min-width: 1440px) {
+    .mission-context h2,
+    .mission-context p {
+        width: 644px;
+    }
+  .mission-context h2 {
+    font-size: 48px;
+    margin-bottom: 80px;
+  }
+}

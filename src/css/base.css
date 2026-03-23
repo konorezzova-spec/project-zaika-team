@@ -3,6 +3,7 @@
   --font-family: "Public Sans", sans-serif;
   --second-family: "Chivo",
     sans-serif;
+    -webkit-font-smoothing: antialiased;
 
       --color-neutral-darkest: #010400;
       --color-neutral-lighter: #d8d9d8;
@@ -49,3 +50,10 @@ body {
   
   color: var(--color-white);
 }
+h2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+} 

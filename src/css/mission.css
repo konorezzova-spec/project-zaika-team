@@ -10,11 +10,7 @@
   }
 }
 .mission-context h2 {
-    font-family: var(--second-family);
     font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--color-white);
     margin-bottom: 24px;
 }
 .mission-context p {

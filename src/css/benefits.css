@@ -29,6 +29,23 @@
     flex-direction: column;
     gap: 16px;
 }
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 16px;
+    row-gap: 32px;
+}
+.benefits-item {
+    width: calc((100% - 16px)/2);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .benefits-list {
+    
+  }
+}
 .benefits-icon {
     fill: var(--color-white);
 }

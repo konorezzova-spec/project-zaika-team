@@ -166,7 +166,7 @@ body:has(.nav-modal-overlay.is-open) {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 16px;
+    padding: 6px 16px;
     width: 100%;
 }
 .modal-header .logo {

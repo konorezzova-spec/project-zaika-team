@@ -16,7 +16,6 @@
 }
 .hero-context {
     width: 343px;
-    height: 264px;
 }
 @media only screen and (min-width: 768px) {
   .hero-container {

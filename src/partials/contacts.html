@@ -23,30 +23,28 @@
                 name="contacts-form"
                 autocomplete="on"
                 novalidatename>
-                <label class="contacts-label">Name
-                      <input type="text"
-                            name="userName"
-                            class="input"
-                            placeholder="Sarah"
-                            requared
-                            autofocus>
+                
+                <label class="contacts-label"
+                      for="userName">Name
                 </label>
-                <label class="contacts-label">Email
-                      <input type="text"
-                            name="userEmail"
-                            class="input"
-                            placeholder="hello@organic.com"
-                            requared>
+                <input name="userName"
+                      id="userName"
+                      class="input"
+                      type="text"
+                      placeholder="Sarah"
+                      requared
+                      >
+                
+                <label class="contacts-label"
+                        for="userImail">Email
                 </label>
-                <label class="contacts-label">Message
-                      <textarea
-                            class="textarea-comment"
-                            name="comment"
-                            rows="5"
-                            cols="10"
-                            placeholder="Type your message...">
-                      </textarea>
-                </label>
+                <input name="userEmail"
+                      id="userEmail"
+                      class="input"
+                      type="email"
+                      placeholder="hello@organic.com"
+                      requared
+                      autocomplete="on">
         </form>
     </div>
 </section>

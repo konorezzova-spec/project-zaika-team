@@ -1,7 +1,5 @@
 .mission {
     background-color: var(--color-japanese-laurel-light);
-    padding-top: 64px;
-    padding-bottom: 64px;
 }
 @media only screen and (min-width: 1440px) {
   .mission {
@@ -22,7 +20,7 @@
     display: flex;
     gap: 24px;
   }
-  .mission-context h2, 
+  .mission-context h2,
   .mission-context p {
     width: 340px;
   }

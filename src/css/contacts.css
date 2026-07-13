@@ -1,0 +1,202 @@
+.contacts {
+  background-color: var(--color-japanese-laurel-lightest);
+  color: var(--color-neutral-darkest);
+}
+.title {
+  margin-bottom: 16px;
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  color: inherit;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.contacts-address {
+  margin-bottom: 32px;
+}
+
+.contacts-list_item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list_item:first-child {
+  margin-bottom: 16px;
+}
+
+.contacts-list_link {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.contacts-list_link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #010400;
+}
+
+.contacts-list_icon {
+  margin-right: 17px;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.valid-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.contacts-form_label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.contacts-form_message {
+  margin-bottom: 8px;
+}
+
+.contacts-form_input {
+  outline: none;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid rgba(1, 4, 0, 0.15);
+  height: 40px;
+  background-color: inherit;
+}
+
+.contacts-form_textarea {
+  outline: none;
+  resize: none;
+  border: 1px solid rgba(1, 4, 0, 0.15);
+  padding: 12px;
+  width: 100%;
+  height: 166px;
+  background-color: inherit;
+}
+
+.text-valid,
+.text-invalid {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  font-size: 14px;
+  display: none;
+  top: 100%;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.inp-valid-message:not(:placeholder-shown) ~ .text-valid {
+  display: block;
+}
+
+.inp-valid-name:not(:placeholder-shown):valid,
+.inp-valid-email:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+.inp-valid-name:not(:placeholder-shown):invalid,
+.inp-valid-email:not(:placeholder-shown):invalid {
+  color: red;
+  border-color: red;
+}
+
+.inp-valid-name:not(:placeholder-shown):valid ~ .text-valid,
+.inp-valid-email:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.inp-valid-name:not(:placeholder-shown):invalid ~ .text-invalid,
+.inp-valid-email:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.contacts-form_btn {
+  background-color: #1a5901;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.contacts-form_btn:hover,
+.contacts-form_btn:focus {
+  outline: none;
+  background-color: #5e8a4d;
+  color: #010400;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contacts-form_btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-img-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts-form_btn {
+    max-width: 343px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-tumb {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts-form {
+    min-width: 644px;
+  }
+
+  .contacts-form_btn {
+    max-width: 198px;
+    margin-bottom: 0;
+  }
+}

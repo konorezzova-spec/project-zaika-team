@@ -1,0 +1,115 @@
+.faq {
+  background-color: var(--color-japanese-laurel-light);
+}
+
+.faq-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.faq-discription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.faq-list {
+  border-top: 1px solid var(--opacity-white-20);
+  margin-top: 24px;
+}
+
+.faq-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--opacity-white-20);
+}
+
+.faq-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-question {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+/* Приховуємо стандартний маркер у всіх браузерах */
+summary {
+  list-style: none; /* сучасний стандарт */
+}
+
+/* Приховуємо для старих браузерів сімейства WebKit (Chrome, Safari) */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Робимо <summary> гнучким контейнером */
+summary {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Додаємо свою іконку через псевдоелемент ::before */
+summary::after {
+  content: "";
+  display: inline-block;
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M23.1162 12.1768C23.2139 12.0792 23.3721 12.0791 23.4697 12.1768L23.8232 12.5303C23.9209 12.6279 23.9208 12.7861 23.8232 12.8838L16.1768 20.5303C16.0791 20.6279 15.9209 20.6279 15.8232 20.5303L8.17676 12.8838C8.07914 12.7861 8.07913 12.6279 8.17676 12.5303L8.53027 12.1768C8.62789 12.0791 8.78615 12.0791 8.88379 12.1768L16 19.293L23.1162 12.1768Z" fill="white" stroke="white" /></svg>');
+
+
+  transition: transform 0.3s ease; /* Плавний поворот */
+}
+
+/* Повертаємо іконку на 180 градусів при розкритті */
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+
+.faq-answer {
+  /* font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5; */
+  color: var(--color-white);
+  margin: 0;
+}
+
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-wrapper {
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .faq-left {
+    width: 421px;
+  }
+
+  .faq-right {
+    width: 867px;
+  }
+
+
+  .faq-list {
+    margin-top: 0;
+  }
+}

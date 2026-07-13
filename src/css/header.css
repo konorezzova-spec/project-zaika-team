@@ -1,5 +1,5 @@
 .header {
-    background-color: #5e8a4d;
+    background-color: var( --color-japanese-laurel-light);
 }
 .header-container {
     display: flex;
@@ -7,6 +7,8 @@
     align-items: center;
     gap: 32px;
     height: 72px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .nav {
     display: inline-flex;
@@ -61,14 +63,14 @@
       font-weight: 500;
       color: var(--color-white);
 
-      transition: background-color, color, border var(--slow);
+      transition: background-color var(--slow), color var(--slow), border var(--slow);
   }
 }
   @media only screen and (min-width: 1440px) {
    .wrapper-btn {
     gap: 0;
-  } 
-  
+  }
+
 }
 
 .order-btn:hover,
@@ -171,7 +173,7 @@ body:has(.nav-modal-overlay.is-open) {
 }
 .modal-header .logo {
     margin-right: auto;
-    fill: #fff;    
+    fill: var(--color-white)
 }
 @media only screen and (min-width: 768px){
     .modal-header {
@@ -232,7 +234,7 @@ body:has(.nav-modal-overlay.is-open) {
     font-size: 16px;
     color: var(--color-white);
 
-    transition: background-color, color, border var(--slow);
+    transition: background-color var(--slow), color var(--slow), border var(--slow);
 }
 @media only screen and (min-width: 768px) {
   .modal-order-btn {

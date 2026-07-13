@@ -1,7 +1,5 @@
 .assorts {
     background-color: var(--color-japanese-laurel-lighter);
-    padding-top: 64px;
-    padding-bottom: 64px;
 }
 @media only screen and (min-width: 1440px) {
   .assorts {
@@ -112,7 +110,7 @@
 
   font-weight: 500;
 
-  transition: background-color, border, color var(--slow);
+  transition: background-color var(--slow), border var(--slow), color var(--slow);
 }
 .add-to-cart:hover {
   background-color: var(--color-japanese-laurel);

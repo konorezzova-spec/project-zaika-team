@@ -1,28 +1,106 @@
-<section class="contacts">
-    <div class="container feedback-container">
-        <h3 class="feedback-subtitle">Contacts</h3>
-        <h2 class="feedback-title">Get in Touch</h2>
-        <p class="feedback-text">We'd love to hear from you anytime!</p>
-        <address>
-            <ul class="contacts-list">
-                <li>
-                    <svg class="contacts-icon" width="24" height="24">
-                      <use href="/img/icons.svg#icon-imail"></use>
-                    </svg>
-                    <a class="contacts" href="mailto:hello@organicstore.com">hello@organicstore.com</a>
-                </li>
-                <li>
-                    <svg class="contacts-icon" width="24" height="24">
-                      <use href="/img/icons.svg#icon-phone"></use>
-                    </svg>
-                    <a class="contacts" href="tel:+1555 3291024">++1 (555) 329-1024</a>
-                </li>
-            </ul>
+<section class="contacts section" id="contacts-id">
+  <div class="container">
+    <div class="contacts-tumb">
+      <div class="contents-tumb_wrapper">
+        <p class="title">Contacts</p>
+
+        <h2 class="subtitle">Get in Touch</h2>
+
+        <p class="text">We'd love to hear from you anytime!</p>
+
+        <address class="contacts-address">
+          <ul class="contacts-list">
+            <li class="contacts-list_item">
+              <svg class="contacts-list_icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-imail"></use>
+              </svg>
+              <a class="contacts-list_link" href="mailto:hello@organicstore.com"
+                >hello@organicstore.com</a
+              >
+            </li>
+            <li class="contacts-list_item">
+              <svg class="contacts-list_icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              <a class="contacts-list_link" href="tel:+15553291024"
+                >+1 (555) 329-1024</a
+              >
+            </li>
+          </ul>
         </address>
-        <dialog class="footer-form" 
-                name="feedback-form"
-                autocomplete="on"
-                novalidatename="feedback-form">
-        </dialog>
+
+        <form class="contacts-form">
+          <div class="valid-box">
+            <label class="contacts-form_label" for="user-name">Name</label>
+            <input
+              class="contacts-form_input inp-valid-name"
+              id="user-name"
+              name="user-name"
+              type="text"
+              pattern="^[a-zA-Z\s\.]{5,64}$"
+              placeholder="Sarah"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid name, try again</p>
+          </div>
+
+          <div class="valid-box">
+            <label class="contacts-form_label" for="user-email">Email</label>
+            <input
+              class="contacts-form_input inp-valid-email"
+              id="user-email"
+              name="user-email"
+              type="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              placeholder="hello@organic.com"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+
+          <div class="valid-box">
+            <label class="contacts-form_message" for="user-message"
+              >Message</label
+            >
+            <textarea
+              class="contacts-form_textarea inp-valid-message"
+              name="user-message"
+              id="user-message"
+              maxlength="500"
+              placeholder="Type your message..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="contacts-form_btn" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./img/contacts/contacts-d@1x.jpg 1x,
+            ./img/contacts/contacts-d@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/contacts/contacts-t@1x.jpg 1x,
+            ./img/contacts/contacts-t@2x.jpg 2x
+          "
+        />
+        <img
+          srcset="
+            ./img/contacts/contacts-m@1x.jpg 1x,
+            ./img/contacts/contacts-m@2x.jpg 2x
+          "
+          alt="friends"
+        />
+      </picture>
     </div>
+  </div>
 </section>

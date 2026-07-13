@@ -19,7 +19,7 @@
 }
 @media only screen and (min-width: 768px) {
   .hero-container {
-    padding-top: 234px; 
+    padding-top: 234px;
     padding-bottom: 234px;
   }
   .hero-context{
@@ -73,7 +73,7 @@
     font-weight: 500;
     color: var(--color-neutral-darkest);
 
-    transition: background-color, color, border var(--slow);
+    transition: background-color var(--slow), color var(--slow), border var(--slow);
 }
 @media only screen and (min-width: 768px) {
     .hero-btn{

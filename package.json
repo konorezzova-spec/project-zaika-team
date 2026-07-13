@@ -1,11 +1,11 @@
 {
-  "name": "project-zaika-team",
+  "name": "project-zaika-shop",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-zaika-team/",
+    "build": "vite build --base=/project-zaika-shop/",
     "preview": "vite preview"
   },
   "devDependencies": {
